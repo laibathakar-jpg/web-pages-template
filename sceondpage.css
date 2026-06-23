@@ -1,0 +1,23 @@
+body {
+    background-image: url(https://media.istockphoto.com/id/1483330591/photo/beautiful-purple-concrete-wall-architectural-exposed-stucco-concrete-wall-used-as-background.jpg?s=1024x1024&w=is&k=20&c=X0YQbYWlDBzZA-TfX3bsMFP6kH29KOx9ZeQ0C5wZOPo=);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1,h3,pre {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#tool { 
+    font-weight: 600px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
