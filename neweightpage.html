@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart - BLAINE</title>
+    <link rel="stylesheet" href="neweightpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="logo">BLAINE</h2>
+        <ul class="nav-menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">BLOGS</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+        <div class="nav-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-shopping-bag"></i>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <header class="page-header">
+        <nav aria-label="breadcrumb">
+            <a href="#">HOME</a> / <span>CART</span>
+        </nav>
+        <h1>MY CART</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error impedit doloremque, cumque ut natus nostrum optio, sint rem accusamus.</p>
+    </header>
+
+    <main class="cart-container">
+        <section class="cart-items" aria-label="Cart items">
+            <article class="product-card">
+                <img src="https://source.unsplash.com/200x200/?dress" alt="Slip Dress" loading="lazy">
+                <div class="product-details">
+                    <h3>SLIP DRESS</h3>
+                    <p>Lorem ipsum is simply dummy text of the printing and typesetting.</p>
+                    <div class="product-actions">
+                        <div class="quantity">
+                            <button class="qty-btn" data-action="decrease" aria-label="Decrease quantity">-</button>
+                            <span class="qty-value">1</span>
+                            <button class="qty-btn" data-action="increase" aria-label="Increase quantity">+</button>
+                        </div>
+                        <div class="actions">
+                            <button class="action-btn" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn" aria-label="Remove item"><i class="fas fa-trash"></i></button>
+                        </div>
+                        <div class="price">$180.05</div>
+                    </div>
+                </div>
+            </article>
+            <!-- Duplicate for 3 more items -->
+            <article class="product-card">
+                <img src="https://source.unsplash.com/200x200/?dress" alt="Slip Dress" loading="lazy">
+                <div class="product-details">
+                    <h3>SLIP DRESS</h3>
+                    <p>Lorem ipsum is simply dummy text of the printing and typesetting.</p>
+                    <div class="product-actions">
+                        <div class="quantity">
+                            <button class="qty-btn" data-action="decrease" aria-label="Decrease quantity">-</button>
+                            <span class="qty-value">1</span>
+                            <button class="qty-btn" data-action="increase" aria-label="Increase quantity">+</button>
+                        </div>
+                        <div class="actions">
+                            <button class="action-btn" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn" aria-label="Remove item"><i class="fas fa-trash"></i></button>
+                        </div>
+                        <div class="price">$180.05</div>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="https://source.unsplash.com/200x200/?dress" alt="Slip Dress" loading="lazy">
+                <div class="product-details">
+                    <h3>SLIP DRESS</h3>
+                    <p>Lorem ipsum is simply dummy text of the printing and typesetting.</p>
+                    <div class="product-actions">
+                        <div class="quantity">
+                            <button class="qty-btn" data-action="decrease" aria-label="Decrease quantity">-</button>
+                            <span class="qty-value">1</span>
+                            <button class="qty-btn" data-action="increase" aria-label="Increase quantity">+</button>
+                        </div>
+                        <div class="actions">
+                            <button class="action-btn" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn" aria-label="Remove item"><i class="fas fa-trash"></i></button>
+                        </div>
+                        <div class="price">$180.05</div>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="https://source.unsplash.com/200x200/?dress" alt="Slip Dress" loading="lazy">
+                <div class="product-details">
+                    <h3>SLIP DRESS</h3>
+                    <p>Lorem ipsum is simply dummy text of the printing and typesetting.</p>
+                    <div class="product-actions">
+                        <div class="quantity">
+                            <button class="qty-btn" data-action="decrease" aria-label="Decrease quantity">-</button>
+                            <span class="qty-value">1</span>
+                            <button class="qty-btn" data-action="increase" aria-label="Increase quantity">+</button>
+                        </div>
+                        <div class="actions">
+                            <button class="action-btn" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn" aria-label="Remove item"><i class="fas fa-trash"></i></button>
+                        </div>
+                        <div class="price">$180.05</div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <aside class="cart-summary" aria-label="Cart summary">
+            <h2>Cart Summary</h2>
+            <div class="item-count">(4) items</div>
+            <ul class="summary-list">
+                <li>
+                    <span>Delivery Charges</span>
+                    <span class="amount">$180.05</span>
+                </li>
+                <li>
+                    <span>Subtotal</span>
+                    <span class="amount">$180.05</span>
+                </li>
+                <li class="total">
+                    <span>TOTAL</span>
+                    <span class="amount">$180.05</span>
+                </li>
+            </ul>
+            <button class="order-btn">Order Now</button>
+        </aside>
+    </main>
+
+    <script>
+        // Mobile nav toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Quantity controls
+        document.querySelectorAll('.qty-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const valueSpan = btn.parentElement.querySelector('.qty-value');
+                let qty = parseInt(valueSpan.textContent);
+                if (btn.dataset.action === 'increase') qty++;
+                else if (qty > 1) qty--;
+                valueSpan.textContent = qty;
+            });
+        });
+    </script>
+</body>
+</html>
