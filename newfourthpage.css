@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #008b8b;
+    --pending-color: #ff6b6b;
+    --in-progress-color: #9b59b6;
+    --closed-color: #27ae60;
+    --bg-color: #f8f9fa;
+    --border-color: #dee2e6;
+    --text-color: #333;
+    --text-muted: #6c757d;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Top Navigation */
+.top-nav {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.main-menu li {
+    color: var(--text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: color 0.2s;
+}
+
+.main-menu li:hover {
+    color: var(--primary-color);
+}
+
+.main-menu li i {
+    color: var(--text-muted);
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.user-section i {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+.profile-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 2px solid #ddd;
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.profile-btn:hover {
+    border-color: var(--primary-color);
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Breadcrumb Section */
+.breadcrumb-section {
+    background: white;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.breadcrumb h5 {
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.breadcrumb h1 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.section-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.setting-icon, .dots-icon {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.setting-icon:hover, .dots-icon:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.bugs-btn, .new-task-btn {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.bugs-btn {
+    background: coral;
+    color: white;
+    border-color: #ff7f50;
+}
+
+.new-task-btn {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* Filters Section */
+.filters-section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    align-items: center;
+}
+
+#search {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.filter-chips {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.filter-chips span {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-color);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.sort-icons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.sort-icons i {
+    width: 36px;
+    height: 36px;
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.sort-icons i:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Bugs Table */
+.bugs-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.table-header, .bug-row {
+    display: grid;
+    grid-template-columns: 50px 1fr 150px 100px 80px 60px;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    align-items: center;
+}
+
+.table-header {
+    background: #6c757d;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.status-dot.pending { background: var(--pending-color); }
+.status-dot.in-progress { background: var(--in-progress-color); }
+.status-dot.closed { background: var(--closed-color); }
+
+.bug-row {
+    border-bottom: 1px solid var(--border-color);
+    transition: background 0.2s;
+}
+
+.bug-row:hover {
+    background: #f8f9ff;
+}
+
+.bug-row .col.details {
+    gap: 0.75rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bug-row .col.details span {
+    font-weight: 500;
+}
+
+.bug-row .status {
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.status.pending {
+    background: #ffeaea;
+    color: var(--pending-color);
+}
+
+.status.in-progress {
+    background: #f3e5f5;
+    color: var(--in-progress-color);
+}
+
+.status.closed {
+    background: #e8f5e8;
+    color: var(--closed-color);
+}
+
+.bug-row .col img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bug-row .actions i {
+    cursor: pointer;
+    transform: rotate(90deg);
+    transition: color 0.2s;
+}
+
+.bug-row .actions i:hover {
+    color: var(--primary-color);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .main-menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .main-menu ul {
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .user-section {
+        order: -1;
+    }
+
+    .breadcrumb-section {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .section-actions {
+        justify-content: center;
+    }
+
+    .filters-section {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .bugs-container {
+        border-radius: 12px;
+    }
+
+    .table-header, .bug-row {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        padding: 1rem;
+    }
+
+    .table-header {
+        display: none;
+    }
+
+    .bug-row {
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        margin-bottom: 1rem;
+        background: white;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .bug-row .col.details {
+        order: 2;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .bug-row .col.status {
+        order: 1;
+        justify-content: center;
+        padding: 0.5rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        width: fit-content;
+    }
+
+    .bug-row .col.due-date, .bug-row .col.assignee, .bug-row .col.actions {
+        order: 3;
+        justify-content: space-around;
+    }
+
+    .bug-row .col.checkbox {
+        order: -1;
+        justify-content: center;
+    }
+
+    .bugs-btn, .new-task-btn {
+        flex: 1;
+        min-height: 44px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-chips {
+        justify-content: center;
+    }
+
+    .sort-icons {
+        justify-content: center;
+    }
+
+    .profile-btn {
+        padding: 0.75rem;
+    }
+
+    .table-header {
+        padding: 0.75rem;
+    }
+}
