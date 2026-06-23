@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url("https://media.istockphoto.com/id/1155516052/photo/marble-colorful-neon-wave-pattern-prism-glitch-effect-abstract-background-dark-purple-blue.jpg?s=1024x1024&w=is&k=20&c=w7_E-ac6vxWeNQmdks_hMi11KsBXZ_cB2r1_lymMv4A=") no-repeat center/cover fixed;
+    font-family: sans-serif;
+}
+navbar {
+    color: gray;
+    display: flex;
+    flex-direction: row-reverse;
+}
+#registration {
+    color: gray;
+    background: white;
+    width: min(90vw, 350px);
+    height: min(90vh, 430px);
+    max-height: 430px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+ #order { 
+    display: flex; 
+    flex-direction: row;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    
+}
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 3rem;
+    min-width: 120px;
+    font-family: sans-serif;
+    padding: 0 1rem;
+}
+
+.Email-Account {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    min-height: 100vh;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    font-size: clamp(1.8rem, 5vw, 3.5rem);
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    flex: 1 1 300px;
+}
+
+p {
+    color: white;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    text-align: center;
+    line-height: 1.5;
+    flex: 1 1 300px;
+    margin-bottom: 1rem;
+}
+#form1 {
+    border: 2px solid gray;
+    border-radius: 2rem;
+    height: 3.5rem;
+    width: min(90%, 250px);
+    margin-top: 1rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+#form2 {
+    border: 2px solid gray;
+    border-radius: 2rem;
+    height: 3.5rem;
+    width: min(90%, 250px);
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+#first {
+    color: white;
+    background-color: mediumspringgreen;
+    border: 2px solid mediumspringgreen;
+    border-radius: 1.25rem;
+    height: 3.5rem;
+    width: min(90%, 150px);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#sceond {
+    color: white;
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 1.25rem;
+    height: 3.5rem;
+    width: min(90%, 150px);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+ #new {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 300px;
+}
+
+@media (max-width: 768px) {
+    .Email-Account {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    #registration {
+        width: 95vw;
+        height: auto;
+        min-height: 300px;
+        order: -1;
+    }
+    
+    #order {
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        gap: 0.5rem;
+    }
+    
+    li {
+        justify-content: center;
+        min-width: auto;
+        width: 100%;
+    }
+    
+    #form1, #form2 {
+        width: 95%;
+    }
+    
+    #first, #sceond {
+        width: 95%;
+    }
+    
+    h1, p {
+        flex: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .Email-Account {
+        padding: 0.5rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    #registration {
+        border-radius: 8px;
+    }
+    
+    #form1, #form2, #first, #sceond {
+        height: 3rem;
+        border-radius: 1.5rem;
+    }
+}
+
+/* Hover effects */
+#first:hover, #sceond:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
