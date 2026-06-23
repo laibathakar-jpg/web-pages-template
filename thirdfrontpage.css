@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-image: url(https://www.ultraimagehub.com/wallpapers/tr:flp-false,gx-0.4,gy-1,q-75,rh-3264,rw-5824,th-768,tw-1366/1235991361505857698.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#my_pic {
+    width: 360px;
+    height: 500px;
+    clip-path: inset(6rem 0px);
+    border-radius: 10px;
+
+}
+.container{
+    color: white;
+    min-height: 100vh;
+     display: flex;
+     justify-content: left;
+     gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.rightcontent{
+     display: flex;
+     flex-direction: column;
+     gap: 2rem; 
+     width: 40rem;
+     flex-wrap: wrap;
+     
+}
+.parallel {
+    display: flex;
+     
+    gap: 1rem;
+}
+ 
+ 
