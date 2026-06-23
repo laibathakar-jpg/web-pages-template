@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newprojectten.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Contact Us - BLAINE</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h2 id="heading1">BLAINE</h2>
+        <ul class="nav-list">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">BLOGS</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+        <div class="nav-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-shopping-bag"></i>
+        </div>
+    </nav>
+    
+    <div class="breadcrumb">
+        <ol>
+            <li>HOME</li>
+            <li>CONTACT US</li>
+        </ol>
+    </div>
+    
+    <div class="hero-section">
+        <h1 class="hero-title">CONTACT US</h1>
+        <p class="hero-text">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum is 
+            simply dummy text of the printing and typesetting industry. Lorem ipsum is simply dummy text 
+            of the printing and typesetting industry.</p>
+    </div>
+    
+    <div class="main-content">
+        <div class="form-container">
+            <div class="form-left">
+                <h2 class="form-title">Send a Message</h2>
+                <form class="contact-form">
+                    <div class="form-group full">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group half">
+                            <label for="phone">Phone#</label>
+                            <input type="tel" id="phone" placeholder="Enter your phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group full">
+                        <label for="company">Group or Company</label>
+                        <input type="text" id="company" placeholder="Enter group or company" required>
+                    </div>
+                    <div class="form-group full">
+                        <label for="message">How can we help?</label>
+                        <textarea id="message" placeholder="Enter your message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Now</button>
+                </form>
+            </div>
+            
+            <div class="form-right">
+                <h2 class="contact-title">Contact Info</h2>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+1(234) 456 7890</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@company.com</span>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img src="data:image/png;base64,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" alt="Location" height="30" width="30"></a>
+                    <a href="#"><img src="https://cdn-icons-png.freepik.com/256/1384/1384063.png" alt="Facebook" height="30" width="30"></a>
+                    <a href="#"><img src="https://www.cdnlogo.com/logos/w/29/whatsapp-icon.svg" alt="WhatsApp" height="30" width="30"></a>
+                    <img class="contact-map" src="https://static.vecteezy.com/system/resources/previews/000/666/443/original/Map-Vector.jpg" alt="Contact Map">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
