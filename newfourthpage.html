@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Bugs</title>
+    <link rel="stylesheet" href="newfourthpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="top-nav">
+        <nav class="main-menu">
+            <ul>
+                <li><i class="fas fa-layer-group"></i> Projects</li>
+                <li><i class="fas fa-calendar-alt"></i> Tasks</li>
+                <li><i class="fas fa-cogs"></i> Manage</li>
+                <li><i class="fas fa-user"></i> Users</li>
+            </ul>
+            <div class="user-section">
+                <i class="fas fa-bell" aria-label="Notifications"></i>
+                <i class="fas fa-comment" aria-label="Messages"></i>
+                <button class="profile-btn">
+                    <span class="avatar">V</span>
+                    <span>DEV</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="breadcrumb-section">
+        <nav class="breadcrumb">
+            <h5><i class="fas fa-greater-than"></i> Projects <i class="fas fa-greater-than"></i> Android UI System</h5>
+            <h1>All bugs listing</h1>
+        </nav>
+        <div class="section-actions">
+            <i class="fas fa-cogs setting-icon" aria-label="Settings" title="Settings"></i>
+            <i class="fas fa-ellipsis-h dots-icon" aria-label="More options" title="More options"></i>
+            <button class="bugs-btn">Bugs</button>
+            <button class="new-task-btn">+ New Task Bug</button>
+        </div>
+    </section>
+
+    <section class="filters-section">
+        <div class="filters">
+            <input type="search" id="search" placeholder="Search bugs..." aria-label="Search">
+            <div class="filter-chips">
+                <span><i class="fas fa-greater-than"></i> Subtask</span>
+                <span><i class="fas fa-greater-than"></i> Me</span>
+                <span><i class="fas fa-greater-than"></i> Assignees</span>
+            </div>
+        </div>
+        <div class="sort-icons">
+            <i class="fas fa-arrow-up" title="Sort ascending"></i>
+            <i class="fas fa-play" title="Play"></i>
+            <i class="fas fa-barcode" title="Barcode"></i>
+            <i class="fab fa-microsoft" title="Microsoft"></i>
+        </div>
+    </section>
+
+    <main class="bugs-container">
+        <div class="table-header">
+            <div class="col checkbox"><i class="fas fa-square"></i></div>
+            <div class="col details"><span>BUG DETAILS</span></div>
+            <div class="col status"><span>STATUS</span></div>
+            <div class="col due-date"><span>DUE DATE</span></div>
+            <div class="col assignee"><span>ASSIGNED TO</span></div>
+            <div class="col actions"><span>ACTION</span></div>
+        </div>
+
+        <div class="bug-row">
+            <div class="col checkbox"><i class="fas fa-square"></i></div>
+            <div class="col details">
+                <i class="status-dot pending"></i>
+                <span>Convert audio file from mobile app to text</span>
+            </div>
+            <div class="col status pending">Pending</div>
+            <div class="col due-date"><i class="fas fa-calendar"></i></div>
+            <div class="col assignee">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2095079014/display_1500/stock-vector-intersecting-circles-blue-and-cyan-merge-concept-colored-icon-business-background-vector-2095079014.jpg" alt="Assignee avatar" width="40" height="40">
+            </div>
+            <div class="col actions"><i class="fas fa-ellipsis-h"></i></div>
+        </div>
+
+        <div class="bug-row">
+            <div class="col checkbox"><i class="fas fa-square"></i></div>
+            <div class="col details">
+                <i class="status-dot in-progress"></i>
+                <span>Fix UI rendering issue in Android app</span>
+            </div>
+            <div class="col status in-progress">In Progress</div>
+            <div class="col due-date"><i class="fas fa-calendar"></i></div>
+            <div class="col assignee">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2095079014/display_1500/stock-vector-intersecting-circles-blue-and-cyan-merge-concept-colored-icon-business-background-vector-2095079014.jpg" alt="Assignee avatar" width="40" height="40">
+            </div>
+            <div class="col actions"><i class="fas fa-ellipsis-h"></i></div>
+        </div>
+
+        <div class="bug-row">
+            <div class="col checkbox"><i class="fas fa-square"></i></div>
+            <div class="col details">
+                <i class="status-dot closed"></i>
+                <span>Audio conversion optimization complete</span>
+            </div>
+            <div class="col status closed">Closed</div>
+            <div class="col due-date"><i class="fas fa-calendar"></i></div>
+            <div class="col assignee">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2095079014/display_1500/stock-vector-intersecting-circles-blue-and-cyan-merge-concept-colored-icon-business-background-vector-2095079014.jpg" alt="Assignee avatar" width="40" height="40">
+            </div>
+            <div class="col actions"><i class="fas fa-ellipsis-h"></i></div>
+        </div>
+
+        <div class="bug-row">
+            <div class="col checkbox"><i class="fas fa-square"></i></div>
+            <div class="col details">
+                <i class="status-dot closed"></i>
+                <span>Backend integration for text output</span>
+            </div>
+            <div class="col status closed">Closed</div>
+            <div class="col due-date"><i class="fas fa-calendar"></i></div>
+            <div class="col assignee">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2095079014/display_1500/stock-vector-intersecting-circles-blue-and-cyan-merge-concept-colored-icon-business-background-vector-2095079014.jpg" alt="Assignee avatar" width="40" height="40">
+            </div>
+            <div class="col actions"><i class="fas fa-ellipsis-h"></i></div>
+        </div>
+
+        <div class="bug-row">
+            <div class="col checkbox"><i class="fas fa-square"></i></div>
+            <div class="col details">
+                <i class="status-dot pending"></i>
+                <span>Mobile app audio input validation</span>
+            </div>
+            <div class="col status pending">Pending</div>
+            <div class="col due-date"><i class="fas fa-calendar"></i></div>
+            <div class="col assignee">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2095079014/display_1500/stock-vector-intersecting-circles-blue-and-cyan-merge-concept-colored-icon-business-background-vector-2095079014.jpg" alt="Assignee avatar" width="40" height="40">
+            </div>
+            <div class="col actions"><i class="fas fa-ellipsis-h"></i></div>
+        </div>
+
+        <div class="bug-row">
+            <div class="col checkbox"><i class="fas fa-square"></i></div>
+            <div class="col details">
+                <i class="status-dot in-progress"></i>
+                <span>Real-time transcription feature</span>
+            </div>
+            <div class="col status in-progress">In Progress</div>
+            <div class="col due-date"><i class="fas fa-calendar"></i></div>
+            <div class="col assignee">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2095079014/display_1500/stock-vector-intersecting-circles-blue-and-cyan-merge-concept-colored-icon-business-background-vector-2095079014.jpg" alt="Assignee avatar" width="40" height="40">
+            </div>
+            <div class="col actions"><i class="fas fa-ellipsis-h"></i></div>
+        </div>
+
+        <div class="bug-row">
+            <div class="col checkbox"><i class="fas fa-square"></i></div>
+            <div class="col details">
+                <i class="status-dot in-progress"></i>
+                <span>Error handling for invalid audio</span>
+            </div>
+            <div class="col status in-progress">In Progress</div>
+            <div class="col due-date"><i class="fas fa-calendar"></i></div>
+            <div class="col assignee">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2095079014/display_1500/stock-vector-intersecting-circles-blue-and-cyan-merge-concept-colored-icon-business-background-vector-2095079014.jpg" alt="Assignee avatar" width="40" height="40">
+            </div>
+            <div class="col actions"><i class="fas fa-ellipsis-h"></i></div>
+        </div>
+
+        <div class="bug-row">
+            <div class="col checkbox"><i class="fas fa-square"></i></div>
+            <div class="col details">
+                <i class="status-dot closed"></i>
+                <span>Performance tuning for conversion</span>
+            </div>
+            <div class="col status closed">Closed</div>
+            <div class="col due-date"><i class="fas fa-calendar"></i></div>
+            <div class="col assignee">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2095079014/display_1500/stock-vector-intersecting-circles-blue-and-cyan-merge-concept-colored-icon-business-background-vector-2095079014.jpg" alt="Assignee avatar" width="40" height="40">
+            </div>
+            <div class="col actions"><i class="fas fa-ellipsis-h"></i></div>
+        </div>
+
+        <div class="bug-row">
+            <div class="col checkbox"><i class="fas fa-square"></i></div>
+            <div class="col details">
+                <i class="status-dot in-progress"></i>
+                <span>UI feedback during processing</span>
+            </div>
+            <div class="col status in-progress">In Progress</div>
+            <div class="col due-date"><i class="fas fa-calendar"></i></div>
+            <div class="col assignee">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2095079014/display_1500/stock-vector-intersecting-circles-blue-and-cyan-merge-concept-colored-icon-business-background-vector-2095079014.jpg" alt="Assignee avatar" width="40" height="40">
+            </div>
+            <div class="col actions"><i class="fas fa-ellipsis-h"></i></div>
+        </div>
+
+        <div class="bug-row">
+            <div class="col checkbox"><i class="fas fa-square"></i></div>
+            <div class="col details">
+                <i class="status-dot pending"></i>
+                <span>Cross-platform audio support</span>
+            </div>
+            <div class="col status pending">Pending</div>
+            <div class="col due-date"><i class="fas fa-calendar"></i></div>
+            <div class="col assignee">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2095079014/display_1500/stock-vector-intersecting-circles-blue-and-cyan-merge-concept-colored-icon-business-background-vector-2095079014.jpg" alt="Assignee avatar" width="40" height="40">
+            </div>
+            <div class="col actions"><i class="fas fa-ellipsis-h"></i></div>
+        </div>
+    </main>
+</body>
+</html>
