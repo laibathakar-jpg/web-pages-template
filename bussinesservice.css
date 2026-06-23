@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.img{
+    margin-top: 30px;
+    height: 430px;
+    width: 100%;
+    border: 2px solid black;
+}
+.nav{
+    display: flex;
+    float: right;
+    position: relative;
+    bottom: 430px;
+    gap: 3rem;
+    color: white;
+    justify-content: center;
+    list-style-type: none; 
+}
+ #head1{
+    bottom: 400px;
+    position: relative;
+    color: white;
+     margin-left: 400px;
+
+ }
+ .icon{
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+    gap: 1rem;
+ }
+ .main{
+   position: relative;
+   bottom: 300px;
+   float: center;
+   color: white;
+ }
