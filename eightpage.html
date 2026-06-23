@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+         background-image: url(https://t3.ftcdn.net/jpg/08/79/02/52/360_F_879025228_oQ8kuRbD4LPCCxVIq4jQNTIGLBVSQT1C.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+         
+    }
+    #form{
+        height: 450px;
+        width: 400px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        background-color: white;
+        float: right;
+         position: relative; 
+          /* bottom: 700px;   */
+         top: 200px;  
+         right: 300px;
+          display: flex;
+          flex-direction: column; 
+
+          
+    }
+    #name1,#name2{
+        height: 50px;
+        width: 180px;
+        border: 2px solid gray;
+        border-radius: 20px;
+    }
+    #name3{
+        height: 50px;
+        width: 300px;
+        border: 2px solid gray;
+        border-radius: 20px;
+        text-align: left;
+    } 
+    th{
+        text-align: left;
+    }
+    textarea{
+        height: 100px;
+        width: 340px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        text-align: left;
+    }
+     
+
+     button{
+        color: white;
+        background-color: aqua;
+        border-radius: 20px;
+        height: 50px;
+        width: 100px;
+        
+     }
+    #one,#two,#three{
+        color: white;
+        position: relative;
+       top: 50px; 
+       left:  320px; 
+       
+     }
+      h1{
+        top: 100px;
+        position: relative;
+        color: white;
+        margin-left: 40px;
+        
+     }
+    p{
+        top: 100px;
+        position: relative;
+        left: 30px;
+        color: white;
+        margin-left: 40px;
+         
+    }
+</style>
+<body>
+    <div>
+    <h1><b>Let's keep in Touch</b></h1>
+    <p>
+        we have created a new product that<br>
+        will help designers, developers and<br>
+        companies create websites for thier<br>
+        startups quickly and easily.
+    </p>
+    
+</div>
+<br>
+    <nav id="three">
+        <i class="fas fa-phone"></i>
+        +1 555 505 5050
+    </nav>
+    
+    <nav id="two"> 
+        <i class="fas fa-envelope"></i>
+        info@designmod0.com
+    </nav>
+    <nav id="one">
+        <i class="fas fa-map-marker-alt">
+            San Francisco, CA560 Bush St &<br>
+            20th Ave, Apt5 San Francisco,<br>
+            230909
+        </i>
+    </nav>
+    <div id="form">
+ <table id="t1">
+          <tr>
+            <th style="color: purple;">
+                YOUR NAME
+            </th>
+            <th style="color: purple;">
+                BUDGET
+            </th>
+        </tr>
+ 
+        <tr>
+       <td> 
+         <input type="text" name="text" id="name1" placeholder="First Name">
+      </td>
+         <td>
+            <input  type="number" name="number" id="name2" placeholder="$500">
+        </td>
+        </tr>
+    </table> 
+    <table id="t2">
+         <tr>
+            <th style="color: purple;">
+                INPUT FIELD 
+            </th>
+        </tr>
+         <tr>
+            <td>
+         <input  type="email" name="email" id="name3" placeholder="name@mail.com">
+            </td>
+         </tr>
+    </table>
+         
+         <table id="t3">
+<tr>
+    <th style="color: purple;">
+    YOUR MESSAGE
+    </th>
+</tr>
+<tr>
+    <td>
+<textarea  name="message" id="message" placeholder="MESSAGE" rows="12"></textarea>
+    </td>
+</tr>
+         </table>
+<label>
+    Send me a copy
+</label>
+<footer> 
+<input  type="checkbox" name="text" id="name4" placeholder="Send me a copy">
+</footer>
+<button>
+    Send
+</button>
+</div>  
+</body>
+</html>
